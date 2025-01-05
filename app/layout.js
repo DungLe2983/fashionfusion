@@ -6,6 +6,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import { Toaster } from "react-hot-toast";
 import ClientLayout from "./client-layout";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
             <Footer />
             <Toaster position="bottom-right" />
           </AppProvider> */}
-          <ClientLayout>{children}</ClientLayout>
+          <ClientLayout>
+            <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+          </ClientLayout>
         </main>
       </body>
     </html>
