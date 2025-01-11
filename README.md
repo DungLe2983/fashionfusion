@@ -39,7 +39,7 @@ To install and run the project locally, follow these steps:
 
 ## User Guide
 
-You can simply click this [link](https://rhythm-party.vercel.app/) to get started.
+You can simply click this [link](https://fashionfusionse122.vercel.app/) to get started.
 
 ## User Interface
 
